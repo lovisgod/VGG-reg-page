@@ -186,15 +186,15 @@ employees = [
 console.log('------------- employees that are web devs');
 const web_developers = employees.filter(person => person.Job === 'Web Developer')
 console.log(web_developers);
-console.log('------------- employess that are web devs and nigerian');
+console.log('------------- employees that are web devs and nigerian');
 const webD_nigerians = employees.filter(person => person.Job === 'Web Developer' && person.Country === 'Nigeria')
 console.log(webD_nigerians);
 console.log('------------- employees that are below age of 20');
 const young_employees = employees.filter(person => person.age < 20)
 console.log(young_employees);
-console.log('------------- employess that are active');
+console.log('------------- employees that are active');
 const active_employees = employees.filter(person => person.active === true)
 console.log(active_employees);
-console.log('------------- employee that gets the highes pay');
+console.log('------------- employee that gets the highest pay');
 const max_pay = employees.map(x => x).sort((a, b) => b.salary - a.salary)[0]
 console.log(max_pay)
